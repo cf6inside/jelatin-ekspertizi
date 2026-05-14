@@ -529,10 +529,11 @@
             line-height: 1.3;
         }
 
-        /* Cookie Banner */
+        /* Çerez Bandı Ana Kutusu */
         #cookie-banner {
             position: fixed;
-            bottom: 20px;
+            /* Instagram barı ve iPhone çentiği için özel hesaplama */
+            bottom: calc(25px + env(safe-area-inset-bottom)); 
             left: 50%;
             transform: translateX(-50%);
             width: calc(100% - 40px);
@@ -551,11 +552,9 @@
             animation: modalIn 0.4s ease-out;
         }
 
-        #cookie-banner.active {
-            display: flex;
-        }
-
+        /* Çerez Bandı Metni */
         .cookie-text {
+            flex: 1; /* Metnin buton tarafından sıkıştırılıp kaybolmasını önler */
             font-size: 0.75rem;
             color: #fff;
             line-height: 1.4;
