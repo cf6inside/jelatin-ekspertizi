@@ -533,6 +533,7 @@
         #cookie-banner {
             position: fixed;
             /* Instagram barı ve iPhone çentiği için özel hesaplama */
+            bottom: 25px; /* 1. YEDEK: PC'ler ve eski tarayıcılar bunu okur */
             bottom: calc(25px + env(safe-area-inset-bottom)); 
             left: 50%;
             transform: translateX(-50%);
@@ -552,6 +553,10 @@
             animation: modalIn 0.4s ease-out;
         }
 
+        #cookie-banner.active {
+            display: flex;
+        }
+        
         /* Çerez Bandı Metni */
         .cookie-text {
             flex: 1; /* Metnin buton tarafından sıkıştırılıp kaybolmasını önler */
