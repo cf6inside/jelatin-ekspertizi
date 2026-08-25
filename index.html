@@ -892,8 +892,8 @@
         <div id="screen-quiz" class="screen">
             <div class="progress-container">
                 <div class="progress-header">
-                    <span class="progress-label" id="progress-text">SORU 1/5</span>
-                    <span class="progress-percent" id="progress-percent-text">20%</span>
+                    <span class="progress-label" id="progress-text">SORU 1/7</span>
+                    <span class="progress-percent" id="progress-percent-text">14%</span>
                 </div>
                 <div class="progress-bar-bg">
                     <div class="progress-bar-fill" id="progress-fill"></div>
@@ -950,7 +950,7 @@
 
         <footer>
             <div class="footer-disclaimer">Bu platformda yer alan tüm içerik, sorular ve sonuçlar tamamen mizah ve eğlence amaçlıdır. Hiçbir gerçeklik, tıbbi teşhis veya hukuki nitelik taşımamaktadır.</div>
-            <div>&copy; 2026 Jelatin Testi &bull; V1.1</div>
+            <div>&copy; 2026 Jelatin Testi &bull; V1.2</div>
             <div class="footer-links">
                 <span class="footer-link" onclick="openInfoModal('modal-about')">HAKKINDA</span>
                 <span class="footer-link" onclick="openInfoModal('modal-contact')">İLETİŞİM</span>
@@ -1131,12 +1131,67 @@
                         ]
                     },
                     {
+                        question: "Hesabı kim öder?",
+                        options: [
+                            { text: "Tabii ki ben öderim", points: 20 },
+                            { text: "Alman usulü", points: 15 },
+                            { text: "O ödesin, eşitlik var", points: 5 },
+                            { text: "Hesabı kitler kaçarım", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Gece 3'te eski sevgilinden 'uyudun mu' mesajı geldi?",
+                        options: [
+                            { text: "Görmem, mışıl mışıl uyurum", points: 20 },
+                            { text: "Sabah terslerim", points: 15 },
+                            { text: "Kim olduğuna bağlı", points: 5 },
+                            { text: "Anında 'Gelsene' yazarım", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Kız arkadaşının kankasıyla aran nasıldır?",
+                        options: [
+                            { text: "Mesafeliyim, saygılıyım", points: 20 },
+                            { text: "Sadece merhabalaşırız", points: 15 },
+                            { text: "Baya kankayız", points: 5 },
+                            { text: "Kankası daha güzelmiş...", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Instagram'da keşfetin ne alemde?",
+                        options: [
+                            { text: "Sadece arabalar ve oyunlar", points: 20 },
+                            { text: "Karışık, komik videolar", points: 15 },
+                            { text: "Sadece kızlar düşüyor", points: 5 },
+                            { text: "OnlyFans fragmanı gibi maşallah", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Yeni tanıştığın bir kıza ilk mesajın ne olur?",
+                        options: [
+                            { text: "Nezaketle selam veririm", points: 20 },
+                            { text: "Ortak bir konudan girerim", points: 15 },
+                            { text: "Direkt alev emojisi 🔥", points: 5 },
+                            { text: "Çok ofansif ve iddialı girerim", points: 0 }
+                        ]
+                    },
+                    // TUZAKLI SORULAR (ERKEK)
+                    {
                         question: "Snapchat durumun?",
                         options: [
                             { text: "Kullanmıyorum ki durumum olsun", points: 20 },
                             { text: "Erkek erkeğe valla", points: 15 },
                             { text: "Birkaç kız arkadaş da ekli, snapleşiyoruz", points: 10 },
                             { text: "Yürümediğim kız kalmadı evelallah, puan da +100k", points: 0, instantFail: true }
+                        ]
+                    },
+                    {
+                        question: "Spora (Gym'e) gitme amacın nedir?",
+                        options: [
+                            { text: "Sadece sağlık ve fit kalmak", points: 20 },
+                            { text: "Stres ve kafa dağıtmak", points: 15 },
+                            { text: "Üçgen vücut yapmak", points: 5 },
+                            { text: "Sadece taytlı kız kesmek / piyasa yapmak", points: 0, instantFail: true }
                         ]
                     }
                 ],
@@ -1154,8 +1209,9 @@
                         question: "Priv hesabın var mı?",
                         options: [
                             { text: "Hayır, ne gerek var?", points: 20 },
-                            { text: "Sadece manzara, kedi köpek falan paylaşıyorum", points: 15 },
-                            { text: "Privi olmayan mı kaldı", points: 0 }
+                            { text: "Sadece çok yakınlarım var", points: 15 },
+                            { text: "Evet, gıybet için şart", points: 5 },
+                            { text: "10 farklı kitleye 10 farklı privim var", points: 0 }
                         ]
                     },
                     {
@@ -1165,15 +1221,6 @@
                             { text: "Üniversitede", points: 15 },
                             { text: "Lisede", points: 10 },
                             { text: "Ortaokul veya öncesi (Hmmm)", points: 0 }
-                        ]
-                    },
-                    {
-                        question: "Snapchat durumun?",
-                        options: [
-                            { text: "Kullanmıyorum ki", points: 20 },
-                            { text: "Kız kıza, tanımadıklarımı eklemem", points: 15 },
-                            { text: "Birkaç erkekle de snapleştiğim oluyor", points: 10 },
-                            { text: "Bana yürüyeni eklerim hatta 500k+ da puanım var", points: 0, instantFail: true }
                         ]
                     },
                     {
@@ -1200,6 +1247,70 @@
                             { text: "Hayır, nezaket her şeydir", points: 20 },
                             { text: "Birkaç kez mecbur kaldım", points: 10 },
                             { text: "Evet, canım istedikçe", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Hesabı kim öder?",
+                        options: [
+                            { text: "Ben öderim", points: 20 },
+                            { text: "Alman usulü", points: 15 },
+                            { text: "Erkek öder, kural budur", points: 5 },
+                            { text: "Cüzdanımı evde unutmuşum numarası yaparım", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Instagram'da eski sevgilinin yeni sevgilisini gördün?",
+                        options: [
+                            { text: "Umrumda olmaz, bakmam", points: 20 },
+                            { text: "Meraktan şöyle bir baktım", points: 15 },
+                            { text: "Fake hesaptan saatlerce stalkladım", points: 5 },
+                            { text: "Yanlışlıkla beğendim, kahroldum", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Gecenin köründe 'uyudun mu' mesajı?",
+                        options: [
+                            { text: "Görmem, sabah uyanınca bakarım", points: 20 },
+                            { text: "Sabah tersleyerek dönerim", points: 15 },
+                            { text: "Flörtümse anında yazarım", points: 5 },
+                            { text: "Direkt konum atarım", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Birinden ayrıldıktan ne kadar süre sonra yeni aşka yelken açarsın?",
+                        options: [
+                            { text: "Aylar/Yıllar geçer, kolay atlatamam", points: 20 },
+                            { text: "1-2 ay sürer", points: 15 },
+                            { text: "1-2 haftaya toparlarım", points: 5 },
+                            { text: "Ayrılmadan önce yenisi hazırdı zaten", points: 0 }
+                        ]
+                    },
+                    {
+                        question: "Instagram DM kutun nasıl?",
+                        options: [
+                            { text: "Sadece arkadaşlarım var", points: 20 },
+                            { text: "Birkaç istek var, duruyor", points: 15 },
+                            { text: "Dolu ama genelde bakmıyorum", points: 5 },
+                            { text: "Mavi tikli hesapların hepsi orda", points: 0 }
+                        ]
+                    },
+                    // TUZAKLI SORULAR (KADIN)
+                    {
+                        question: "Snapchat durumun?",
+                        options: [
+                            { text: "Kullanmıyorum ki", points: 20 },
+                            { text: "Kız kıza, tanımadıklarımı eklemem", points: 15 },
+                            { text: "Birkaç erkekle de snapleştiğim oluyor", points: 10 },
+                            { text: "Bana yürüyeni eklerim hatta 500k+ da puanım var", points: 0, instantFail: true }
+                        ]
+                    },
+                    {
+                        question: "Yakın bir erkek kankan var mı?",
+                        options: [
+                            { text: "Hayır, gerek duymuyorum", points: 20 },
+                            { text: "Var ama sınırlarımızı biliyoruz", points: 15 },
+                            { text: "1-2 tane kankam var", points: 5 },
+                            { text: "Sadece erkeklerle anlaşıyorum, hepsi de bana aşık", points: 0, instantFail: true }
                         ]
                     }
                 ]
@@ -1343,6 +1454,7 @@
         };
 
         /* APP STATE */
+        const QUESTIONS_PER_SESSION = 7; // Her testte sorulacak sabit soru sayısı
         let currentGender = null;
         let currentQuestions = [];
         let currentQuestionIndex = 0;
@@ -1383,28 +1495,27 @@
             return array;
         }
 
-        /* GENDER SELECTION */
+        /* GENDER SELECTION & QUESTION POOLING */
         function selectGender(gender) {
             currentGender = gender;
             currentQuestionIndex = 0;
             totalScore = 0;
             
-            // Shallow copy of specific gender questions
-            let originalQuestions = [...TEST_DATA.questions[gender]];
+            const pool = TEST_DATA.questions[gender];
             
-            if (gender === 'erkek') {
-                // Completely random shuffle for men
-                currentQuestions = shuffleArray(originalQuestions);
-            } else {
-                // Special rule for women: "Snapchat durumun?" must stay at index 2 (3rd question)
-                const snapchatQ = originalQuestions.find(q => q.question === "Snapchat durumun?");
-                const otherQuestions = originalQuestions.filter(q => q.question !== "Snapchat durumun?");
-                
-                let shuffledOthers = shuffleArray(otherQuestions);
-                // Insert snapchatQ back at the required position (index 2)
-                shuffledOthers.splice(2, 0, snapchatQ);
-                currentQuestions = shuffledOthers;
-            }
+            // Tuzaklı ve Normal soruları ayır
+            const traps = pool.filter(q => q.options.some(o => o.instantFail));
+            const normals = pool.filter(q => !q.options.some(o => o.instantFail));
+            
+            // 1 adet rastgele tuzaklı soru seç (Meme kültürünü korumak için her testte kesin olsun)
+            const selectedTrap = traps[Math.floor(Math.random() * traps.length)];
+            
+            // Kalan soruları (Örn: 6 adet) normal sorulardan rastgele seç
+            let shuffledNormals = shuffleArray([...normals]);
+            const selectedNormals = shuffledNormals.slice(0, QUESTIONS_PER_SESSION - 1);
+            
+            // Hepsini birleştir ve tekrar karıştır ki tuzaklı soru hep aynı sırada çıkmasın
+            currentQuestions = shuffleArray([...selectedNormals, selectedTrap]);
             
             goTo('quiz');
             loadQuestion();
@@ -1462,6 +1573,7 @@
                 tier = genderResults.find(r => r.isInstantFail);
                 percentage = 0;
             } else {
+                // Dinamik hesaplama: Seçilen soru sayısı (7) * Maksimum Puan (20)
                 const maxScore = currentQuestions.length * 20;
                 percentage = Math.round((totalScore / maxScore) * 100);
                 tier = genderResults.find(r => !r.isInstantFail && percentage >= r.threshold) || genderResults[genderResults.length - 1];
